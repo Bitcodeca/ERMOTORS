@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.2.1/flickity.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/nivo-slider.css" />
@@ -38,7 +39,7 @@
             <div class="nivo-caption1 caption1">
               <h2>Ford</h2>
               <h2>Explorer 2016</h2>
-              <h3>Nueva</h3>
+              <h3>NUEVO</h3>
             </div>
         </div>
     </div>
@@ -47,21 +48,36 @@
             <div class="nivo-caption1 caption1">
               <h2>Jeep</h2>
               <h2>Rubicon 2014</h2>
-              <h3>Usado</h3>
+              <h3>USADO</h3>
             </div>
         </div>
     </div>
     <div class="barradenav">
         <ul id="dropdown1" class="dropdown-content">
-          <li><a href="#!">Nuevos</a></li>
+          <li><a href="#!">Nuevo</a></li>
           <li class="divider"></li>
-          <li><a href="#!">Usados</a></li>
+          <li><a href="#!">Usado</a></li>
           <li class="divider"></li>
-          <li><a href="#!">Blindados</a></li>
+          <li><a href="#!">Blindado</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">Moto</a></li>
           <li class="divider"></li>
           <li><a href="#!">Maquinaria</a></li>
           <li class="divider"></li>
-          <li><a href="#!">Otros</a></li>
+          <li><a href="#!">Otro</a></li>
+        </ul>
+        <ul id="dropdown2" class="dropdown-content">
+          <li><a href="#!">Nuevo</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">Usado</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">Blindado</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">Moto</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">Maquinaria</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">Otro</a></li>
         </ul>
         <nav>
             <div class="nav-wrapper grey lighten-5 z-depth-2">
@@ -70,17 +86,15 @@
                     <a href="#" data-activates="mobile-demo" class="button-collapse waves-effect waves-yellow"><i class="fa fa-bars" aria-hidden="true"></i></a>
                     <ul class="right hide-on-med-and-down">
                         <li class="active"><a href="index.html">INICIO</a></li>
-                        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">VEHÍCULOS <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
                         <li><a href="servicios.html">SERVICIOS</a></li>
+                        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">VEHÍCULOS <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
                         <li><a href="contacto.html">CONTACTO</a></li>
                     </ul>
                     <ul class="side-nav" id="mobile-demo">
-                        <li><h2 class="center-align white-text">CONSTRUC<span class="letraamarilla">ER</span></h2></li>
+                        <li><img src="img/logonavbar.png" class="responsive-img"></li>
                         <li class="active"><a href="index.html">INICIO</a></li>
-                        <li><a href="nosotros.html">NOSOTROS</a></li>
+                        <li><a class="dropdown-button" href="#!" data-activates="dropdown2">VEHÍCULOS <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
                         <li><a href="servicios.html">SERVICIOS</a></li>
-                        <li><a href="obras.html">OBRAS</a></li>
-                        <li><a href="venta.html">VENTA</a></li>
                         <li><a href="contacto.html">CONTACTO</a></li>
                     </ul>
                 </div>
@@ -88,13 +102,36 @@
         </nav>
     </div>
     <main>
-      <div class="container margintop75">
-          <div class="row">
-              <div class="col-xs-12">
-                  <h1>Venta de Vehículos</h1>
-              </div>
-          </div>
-      </div>
+        <div class="container margintop50">
+            <div class="row selec">
+                <div class="col-xs-6 col-sm-2 center-align hoverable"><a href="#!"><img src="img/nuevo.jpg" class="responsive-img"><span>NUEVO</span></a></div>
+                <div class="col-xs-6 col-sm-2 center-align hoverable"><a href="#!"><img src="img/usado.jpg" class="responsive-img"><span>USADO</span></a></div>
+                <div class="col-xs-6 col-sm-2 center-align hoverable"><a href="#!"><img src="img/blindado.jpg" class="responsive-img"><span>BLINDADOS</span></a></div>
+                <div class="col-xs-6 col-sm-2 center-align hoverable"><a href="#!"><img src="img/moto.jpg" class="responsive-img"><span>MOTOS</span></a></div>
+                <div class="col-xs-6 col-sm-2 center-align hoverable"><a href="#!"><img src="img/maquinaria.jpg" class="responsive-img"><span>MAQUINARIA</span></a></div>
+                <div class="col-xs-6 col-sm-2 center-align hoverable"><a href="#!"><img src="img/otro.jpg" class="responsive-img"><span>OTROS</span></a></div>
+            </div>
+            <h2>¡<b class="letraroja">Busca</b> tu carro!</h2>
+        </div>
+            <!--<div class="tag"> <span>Venta</span> </div>-->
+        <div class="bordertopybotrojo padding0 z-depth-1">
+            <div class="container">
+                <div class="main-gallery">
+                    <div class="gallery-cell"><img src="img/er.png" alt="logo metroacero de venezuela" ></div>
+                    <div class="gallery-cell"><img src="img/er.png" alt="logo metroacero de venezuela" ></div>
+                    <div class="gallery-cell"><img src="img/er.png" alt="logo metroacero de venezuela" ></div>
+                    <div class="gallery-cell"><img src="img/er.png" alt="logo metroacero de venezuela" ></div>
+                    <div class="gallery-cell"><img src="img/er.png" alt="logo metroacero de venezuela" ></div>
+                </div>
+            </div>
+        </div>
+        <div class="container margintop75">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>Servicios</h2>
+                </div>
+            </div>
+        </div>
         <div class="container margintop75">
             <div class="row">
                 <div class="col-xs-12">
@@ -102,90 +139,34 @@
                 </div>
             </div>
         </div>
-          <div class="container margintop75">
-              <div class="row">
-                  <div class="col-xs-12">
-                      <h1>Venta de Vehículos</h1>
-                  </div>
-              </div>
-          </div>
-            <div class="container margintop75">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h1>Venta de Vehículos</h1>
-                    </div>
+        <div class="container margintop75">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Venta de Vehículos</h1>
                 </div>
             </div>
-              <div class="container margintop75">
-                  <div class="row">
-                      <div class="col-xs-12">
-                          <h1>Venta de Vehículos</h1>
-                      </div>
-                  </div>
-              </div>
-                <div class="container margintop75">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h1>Venta de Vehículos</h1>
-                        </div>
-                    </div>
-                </div>
-                  <div class="container margintop75">
-                      <div class="row">
-                          <div class="col-xs-12">
-                              <h1>Venta de Vehículos</h1>
-                          </div>
-                      </div>
-                  </div>
-                    <div class="container margintop75">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <h1>Venta de Vehículos</h1>
-                            </div>
-                        </div>
-                    </div>
-                      <div class="container margintop75">
-                          <div class="row">
-                              <div class="col-xs-12">
-                                  <h1>Venta de Vehículos</h1>
-                              </div>
-                          </div>
-                      </div>
-                        <div class="container margintop75">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <h1>Venta de Vehículos</h1>
-                                </div>
-                            </div>
-                        </div>
-                          <div class="container margintop75">
-                              <div class="row">
-                                  <div class="col-xs-12">
-                                      <h1>Venta de Vehículos</h1>
-                                  </div>
-                              </div>
-                          </div>
-                            <div class="container margintop75">
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <h1>Venta de Vehículos</h1>
-                                    </div>
-                                </div>
-                            </div>
+        </div>
     </main>
     <!--/////////////////////////////// FOOTER //////////////////////////////////////////-->
     <footer class="margintop25">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-3"></div>
-                <div class="col-xs-12 col-sm-9"></div>
+        <div class="row marginbot0">
+            <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3 padding0 displayflex">
+                <div class="imgfooter fondorojo">
+                    <img src="img/erblanco.png" class="responsive-img">
+                </div>
+                <div class="triangulorojo"></div>
+            </div>
+            <div class="col-xs-12 col-sm-7 col-md-8 col-lg-9 padding0 displayflex height150px">
+                <div class="col-sm-4 paddingtop10"><h3 class="letraroja">SÍGUENOS</h3></div>
+                <div class="col-sm-4 paddingtop10"><h3 class="letraroja">SÍGUENOS</h3></div>
+                <div class="col-sm-4 paddingtop10"><h3 class="letraroja">SÍGUENOS</h3></div>
             </div>
         </div>
         <div class="footer">
             <div class="container">
                 <div class="row marginbot0">
                     <div class="col-xs-12">
-                        <p class="copyright center-align small margin5">&copy; 2016 Construcer C.A. | RIF: J-40422522-6 | Todos los Derechos Reservados | Desarrollado por
+                        <p class="copyright center-align small margin5">&copy; 2016 ER MOTORS C.A. | RIF: J-40422522-6 | Todos los Derechos Reservados | Desarrollado por
                             <a href="http://bitcodeweb.com/" target="_blank"><img src="img/logomini.png" class="responsive-img"></a>
                         </p>
                     </div>
@@ -197,15 +178,14 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nivoslider/3.2/jquery.nivo.slider.pack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.2.1/flickity.pkgd.min.js"></script>
     <script>
         $(document).ready(function() {
             $(".button-collapse").sideNav();
-            $(".dropdown-button").dropdown({
-              hover: true,
-              inDuration: 300,
-              outDuration: 225});
+            $(".dropdown-button").dropdown({ hover: true, inDuration: 300, outDuration: 225});
             $('.barradenav').pushpin({ top: $('.barradenav').offset().top });
         });
+			  $('.main-gallery').flickity({ cellAlign: 'center', contain: true, autoPlay: 1500, imagesLoaded: true });
         $('#slider').nivoSlider({
             prevText: '<span class="fa-stack fa-lg"><i class="fa fa-angle-double-left fa-stack-2x"></i></span>',
             nextText: '<span class="fa-stack fa-lg"><i class="fa fa-angle-double-right fa-stack-2x"></i></span>',
