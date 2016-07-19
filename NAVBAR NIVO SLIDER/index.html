@@ -14,50 +14,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.2.1/flickity.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/nivo-slider.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="slider">
-      <ul class="slides">
-        <li>
-            <img src="img/c1.jpeg" />
-            <div class="caption right-align">
-                <div class="diagonalstripe">
-                    <div class="nivo-caption1 caption1">
-                        <h2>BMW</h2>
-                        <h2>530i 2008</h2>
-                        <h3>BLINDADO</h3>
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li>
-            <img src="img/c5.jpeg" />
-            <div class="caption left-align">
-                <div class="diagonalstripe">
-                    <div class="nivo-caption1 caption1">
-                        <h2>Ford</h2>
-                        <h2>Explorer 2016</h2>
-                        <h3>NUEVO</h3>
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li>
-            <img src="img/c3.jpg" />
-            <div class="caption right-align">
-                <div class="diagonalstripe">
-                    <div class="nivo-caption1 caption1">
-                        <h2>Jeep</h2>
-                        <h2>Rubicon 2014</h2>
-                        <h3>USADO</h3>
-                    </div>
-                </div>
-            </div>
-        </li>
-      </ul>
+    <div id="slider" class="nivoSlider">
+        <img src="img/c5.jpeg" alt="slider3" title="#caption1" />
+        <img src="img/c1.jpeg" alt="slider3" title="#caption2" />
+        <img src="img/c3.jpg" alt="slider3" title="#caption3" />
     </div>
+
+    <div id="caption1" style="display:none">
+        <div class="diagonalstripe">
+            <div class="nivo-caption1 caption1">
+              <h2>BMW</h2>
+              <h2>530i 2008</h2>
+              <h3>BLINDADO</h3>
+            </div>
+        </div>
+    </div>
+    <div id="caption2" style="display:none">
+        <div class="diagonalstripe">
+            <div class="nivo-caption1 caption1">
+              <h2>Ford</h2>
+              <h2>Explorer 2016</h2>
+              <h3>NUEVO</h3>
+            </div>
+        </div>
+    </div>
+    <div id="caption3" style="display:none">
+        <div class="diagonalstripe">
+            <div class="nivo-caption1 caption1">
+              <h2>Jeep</h2>
+              <h2>Rubicon 2014</h2>
+              <h3>USADO</h3>
+            </div>
+        </div>
+    </div>
+
 
     <div class="barradenav">
         <ul id="dropdown1" class="dropdown-content">
@@ -213,15 +208,26 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nivoslider/3.2/jquery.nivo.slider.pack.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.2.1/flickity.pkgd.min.js"></script>
     <script>
         $(document).ready(function() {
             $(".button-collapse").sideNav();
             $(".dropdown-button").dropdown({ hover: true, inDuration: 300, outDuration: 225});
             $('.barradenav').pushpin({ top: $('.barradenav').offset().top });
-            $('.slider').slider({ indicators: false, interval: 3000 });
         });
 			  $('.main-gallery').flickity({ cellAlign: 'center', contain: true, autoPlay: 2500, imagesLoaded: true });
+        $('#slider').nivoSlider({
+            prevText: '<span class="fa-stack fa-lg"><i class="fa fa-angle-double-left fa-stack-2x"></i></span>',
+            nextText: '<span class="fa-stack fa-lg"><i class="fa fa-angle-double-right fa-stack-2x"></i></span>',
+            directionNav: true,
+            effect: 'sliceDownLeft',
+            controlNav: false,
+            pauseOnHover: false,
+            animSpeed: 500,
+            pauseTime: 600000,
+            controlNavThumbs: false,
+        });
     </script>
 </body>
 

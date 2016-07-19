@@ -105,26 +105,11 @@ textarea.materialize-textarea:focus:not([readonly])+label{color:#400C0D;}
 .card .card-content { padding: 10px; }
 .hrroja { border-top: 1px solid #ef3526; }
 
-
-.caption { position: absolute; overflow: hidden; background: transparent; color: #FFF; z-index: 8; width: 100%; height: 100%; background-image: url(../img/er.png); background-size: 198px 148px; background-repeat: no-repeat; mix-blend-mode: multiply; }
-.nivo-caption1 { position: absolute; top: 50%; left: 50%; width: auto; height: auto; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
-.caption1 h2 { font-size: 6rem; color: black; text-shadow: 3px 3px #fff; font-weight: bolder; }
-.caption1 h3 { font-size: 4rem; }
-.slider {
-    position: relative;
-    height: calc(78vh - 55px) !important;
-    width: 100%;
-}
-.slider .slides {
-    background-color: #9e9e9e;
-    margin: 0;
-    height: calc(78vh - 55px) !important;
-}
-.slider .slides li .caption {
-    top: 0%;
-    left: 0%;
-    width: 100%;
-}
+div.mh100 div.slider-wrapper { height: 140px ; overflow: hidden;}
+div.mh100 div.slider-wrapper div.nivoSlider { max-height: 100px ;}
+div.mh100 .nivoSlider a.iframe:first-child  { height:100px; max-width: 100%; overflow: hidden; }
+div.mh100 div.slider-wrapper div.nivoSlider img { max-width: 100%; height: auto; overflow:hidden; position: relative; }
+div.mw200 div.slider-wrapper { max-width: 200px; }
 
 
 @media (max-width:1200px){
@@ -137,7 +122,15 @@ textarea.materialize-textarea:focus:not([readonly])+label{color:#400C0D;}
 @media (max-width:768px){
     .top-nav { display: block; }
     main {padding-left: 0px;}
+    .nivoSlider img {
+    position: absolute !important;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto !important;
+    height: auto !important;
+}
 }
 @media (max-width:520px){
-    .showxs { display: block; }
+.nivoSlider img { height: 100% !important; width: auto !important; }
+.showxs { display: block; }
 }
