@@ -54,15 +54,15 @@
                         <li><a href="index.html" class="waves-effect waves-light">INICIO</a></li>
                         <li><a href="servicios.html" class="waves-effect waves-light">SERVICIOS</a></li>
                         <li class="active"><a class="dropdown-button" href="#!" data-activates="dropdown1">VEHÍCULOS <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
-                        <li><a href="servicios.html" class="waves-effect waves-light">ALIANZAS</a></li>
+                        <li><a href="alianzas.html" class="waves-effect waves-light">ALIANZAS</a></li>
                         <li><a href="contacto.html" class="waves-effect waves-light">CONTACTO</a></li>
                     </ul>
                     <ul class="side-nav" id="mobile-demo">
-                        <li><img src="img/logonavbar.png" class="responsive-img"></li>
+                        <li><img src="img/sidebarer.jpg" class="responsive-img"></li>
                         <li><a href="index.html" class="waves-effect waves-light">INICIO</a></li>
                         <li><a href="servicios.html" class="waves-effect waves-light">SERVICIOS</a></li>
                         <li class="active"><a class="dropdown-button" href="#!" data-activates="dropdown2">VEHÍCULOS <i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
-                        <li><a href="servicios.html" class="waves-effect waves-light">ALIANZAS</a></li>
+                        <li><a href="alianzas.html" class="waves-effect waves-light">ALIANZAS</a></li>
                         <li><a href="contacto.html" class="waves-effect waves-light">CONTACTO</a></li>
                     </ul>
                 </div>
@@ -158,10 +158,18 @@
                             <p>Color: Blanco</p>
                             <p>Caja: Automático</p>
                             <p>Kilometraje: 0 Km.</p>
+                            <a class="waves-effect waves-light red btn modal-trigger" href="#modal1">Más Fotos</a>
                         </div>
                     </div>
                 </div>
-
+                <div id="modal1" class="modal modal-fixed-footer">
+                    <div class="modal-content">
+                      <img src="img/produc01.jpg">
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-floating btn-large red"><i class="fa fa-times" aria-hidden="true"></i></a>
+                    </div>
+                </div>
                 <div class="col-sm-6 col-md-4 mix jeep" data-myorder="2012">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
@@ -408,6 +416,9 @@
                 </div>
             </div>
         </div>
+        <div class="container">
+          <hr class="hrroja width50p" />
+        </div>
     </main>
     <!--/////////////////////////////// FOOTER //////////////////////////////////////////-->
     <footer class="margintop50">
@@ -453,6 +464,7 @@
         $(document).ready(function() {
             $(".button-collapse").sideNav();
             $(".dropdown-button").dropdown({ hover: true, inDuration: 300, outDuration: 225});
+            $('.modal-trigger').leanModal();
         });
 			  $('.main-gallery').flickity({ cellAlign: 'center', contain: true, autoPlay: 2500, imagesLoaded: true });
         $(function(){
