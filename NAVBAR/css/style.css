@@ -109,8 +109,8 @@ textarea.materialize-textarea:focus:not([readonly])+label{color:#400C0D;}
 .nivo-caption1 { position: absolute; top: 50%; left: 50%; width: auto; height: auto; -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 .caption1 h2 { font-size: 6rem; color: black; text-shadow: 3px 3px #fff; font-weight: bolder; }
 .caption1 h3 { font-size: 4rem; }
-.slider { height: calc(78vh - 55px) !important; width: 100%; }
-.slider .slides { height: calc(78vh - 55px) !important; }
+.slider { height: calc(65vh - 55px) !important; width: 100%; }
+.slider .slides { height: calc(65vh - 55px) !important; }
 .slider .slides li .caption { top: 0%; left: 0%; width: 100%; }
 .gallery-cell { width: auto; height: 225px; }
 .gallery-cell img { height: 225px; width: auto; }
@@ -156,6 +156,8 @@ textarea.materialize-textarea:focus:not([readonly]){ border-bottom: 1px solid #2
     .trianguloder { border-width: 0 100px 300px 0; }
 }
 @media (max-width:520px){
+    .slider { height: calc(75vh - 55px) !important; width: 100%; }
+    .slider .slides { height: calc(75vh - 55px) !important; }
     h1 { font-size: 4rem; }
     h2 { font-size: 3.46rem; }
     h3 { font-size: 2.82rem; }
